@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AvaloniaApplication1.Models;
 
@@ -26,4 +27,6 @@ public partial class Employee
     public virtual Position Position { get; set; } = null!;
 
     public virtual Role Role { get; set; } = null!;
+    
+    public decimal Weight => EmployeeMetrics?.Select(x => (decimal)x.Metric.Weight).Sum() ?? 0;
 }

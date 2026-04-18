@@ -9,7 +9,7 @@ public partial class MainWindowViewModel : ViewModelBase
 
     public Employee? currentEmployee;
     
-    MainWindowViewModel Instance { get; set; }
+    public static MainWindowViewModel Instance { get; set; }
     
     public MainWindowViewModel()
     {
