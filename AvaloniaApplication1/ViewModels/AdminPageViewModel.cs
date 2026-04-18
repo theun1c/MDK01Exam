@@ -14,6 +14,19 @@ public partial class AdminPageViewModel : ViewModelBase
         .Include(x => x.Position)
         .Include(x => x.Role)
         .ToList();
+
+    public void EditUser(Employee employee)
+    {
+        MainWindowViewModel.Instance.PageSwitcher = new EditUserPageViewModel(employee);
+    }
+
+    public void GoBack()
+    {
+        MainWindowViewModel.Instance.PageSwitcher = new LoginPageViewModel();
+    }
     
-    
+    public void CreateUser()
+    {
+        MainWindowViewModel.Instance.PageSwitcher = new CreateUserViewModel();
+    }
 }

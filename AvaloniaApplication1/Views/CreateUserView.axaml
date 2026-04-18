@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaApplication1.Views.CreateUserView"
+             xmlns:vm="clr-namespace:AvaloniaApplication1.ViewModels"
+             x:DataType="vm:CreateUserViewModel">
+    <StackPanel>
+        <TextBox Watermark="Login" Text="{Binding Employee.Login}"/>
+        <TextBox Watermark="Password" Text="{Binding Employee.Password}"/>
+        <TextBox Watermark="FirstName" Text="{Binding Employee.FirstName}"/>
+        <TextBox Watermark="LastName" Text="{Binding Employee.LastName}"/>
+        <TextBox Watermark="MidleName" Text="{Binding Employee.MiddleName}"/>
+        
+        <ComboBox ItemsSource="{Binding Roles}" SelectedItem="{Binding SelectedRole}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <ComboBox ItemsSource="{Binding Positions}" SelectedItem="{Binding SelectedPosition}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <Button Content="Save" Command="{Binding SaveUser}"/>
+        <Button Content="Back" Command="{Binding GoBack}"/>
+        <TextBlock Text="{Binding Message}"/>
+    </StackPanel>
+</UserControl>

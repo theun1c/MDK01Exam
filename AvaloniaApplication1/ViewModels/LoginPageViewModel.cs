@@ -30,7 +30,7 @@ public partial class LoginPageViewModel : ViewModelBase
             }
             else
             {
-                MainWindowViewModel.Instance.PageSwitcher = new AdminPageViewModel();
+                MainWindowViewModel.Instance.PageSwitcher = new UserPageViewModel();
             }
         }
         else

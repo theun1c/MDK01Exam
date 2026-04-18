@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaApplication1.Views.UserPageView"
+             xmlns:vm="clr-namespace:AvaloniaApplication1.ViewModels"
+             x:DataType="vm:UserPageViewModel">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Content="Logout" Command="{Binding GoBack}"/>
+        <StackPanel>
+            <TextBlock Text="{Binding Employee.FirstName}"/>
+            <TextBlock Text="{Binding Employee.LastName}"/>
+            <TextBlock Text="{Binding Employee.MiddleName}"/>
+            <TextBlock Text="{Binding Employee.Role.Name}"/>
+            <TextBlock Text="{Binding Employee.Position.Name}"/>
+            <TextBlock Text="{Binding Employee.Weight}"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

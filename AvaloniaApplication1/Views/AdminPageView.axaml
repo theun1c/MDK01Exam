@@ -6,18 +6,25 @@
              x:Class="AvaloniaApplication1.Views.AdminPageView"
              xmlns:vm="clr-namespace:AvaloniaApplication1.ViewModels"
              x:DataType="vm:AdminPageViewModel">
-    <ListBox ItemsSource="{Binding Employees}" HorizontalAlignment="Center" Background="White">
-        <ListBox.ItemTemplate>
-            <DataTemplate>
-                <StackPanel>
-                    <TextBlock Text="{Binding FirstName}"/>
-                    <TextBlock Text="{Binding LastName}"/>
-                    <TextBlock Text="{Binding MiddleName}"/>
-                    <TextBlock Text="{Binding Role.Name}"/>
-                    <TextBlock Text="{Binding Position.Name}"/>
-                    <TextBlock Text="{Binding Weight}"/>
-                </StackPanel>
-            </DataTemplate>
-        </ListBox.ItemTemplate>
-    </ListBox>
+    <StackPanel>
+        <Button Content="Logout" Command="{Binding GoBack}"/>
+        <Button Content="Create" Command="{Binding CreateUser}"/>
+        <ListBox ItemsSource="{Binding Employees}" HorizontalAlignment="Center" Background="White">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding FirstName}"/>
+                        <TextBlock Text="{Binding LastName}"/>
+                        <TextBlock Text="{Binding MiddleName}"/>
+                        <TextBlock Text="{Binding Role.Name}"/>
+                        <TextBlock Text="{Binding Position.Name}"/>
+                        <TextBlock Text="{Binding Weight}"/>
+                    
+                        <Button Content="Edit" Command="{Binding $parent[ListBox].((vm:AdminPageViewModel)DataContext).EditUser}" CommandParameter="{Binding}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+    
 </UserControl>
