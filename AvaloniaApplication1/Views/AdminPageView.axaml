@@ -9,6 +9,9 @@
     <StackPanel>
         <Button Content="Logout" Command="{Binding GoBack}"/>
         <Button Content="Create" Command="{Binding CreateUser}"/>
+        <Button Content="SortDest" Command="{Binding SortDest}"/>
+        <Button Content="SortAsc" Command="{Binding SortAsc}"/>
+        <TextBox Text="{Binding Search}"/>
         <ListBox ItemsSource="{Binding Employees}" HorizontalAlignment="Center" Background="White">
             <ListBox.ItemTemplate>
                 <DataTemplate>
