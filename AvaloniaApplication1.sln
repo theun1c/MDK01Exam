@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplication1", "Ava
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplication1.Test", "AvaloniaApplication1.Test\AvaloniaApplication1.Test.csproj", "{50A1C40C-96A3-447B-9545-48F4C15228EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplication1.DLL", "AvaloniaApplication1.DLL\AvaloniaApplication1.DLL.csproj", "{20C74871-EE29-4291-A0D0-59D951FA1EE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplication1.DLL", "AvaloniaApplication1.DLL\AvaloniaApplication1.DLL.csproj", "{AB2AC6D6-4844-4A60-8839-5DFB7A1EFFB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +20,9 @@ Global
 		{50A1C40C-96A3-447B-9545-48F4C15228EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50A1C40C-96A3-447B-9545-48F4C15228EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50A1C40C-96A3-447B-9545-48F4C15228EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20C74871-EE29-4291-A0D0-59D951FA1EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20C74871-EE29-4291-A0D0-59D951FA1EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20C74871-EE29-4291-A0D0-59D951FA1EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20C74871-EE29-4291-A0D0-59D951FA1EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2AC6D6-4844-4A60-8839-5DFB7A1EFFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2AC6D6-4844-4A60-8839-5DFB7A1EFFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2AC6D6-4844-4A60-8839-5DFB7A1EFFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2AC6D6-4844-4A60-8839-5DFB7A1EFFB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
